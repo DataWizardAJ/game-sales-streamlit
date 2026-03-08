@@ -24,7 +24,7 @@ Year = st.number_input(
 # gender input form
 
 Publisher = st.text_input(
-    label = '02. Enter the Game\'s Publisher'
+    '02. Enter the Game\'s Publisher'
     )
 
 
@@ -38,7 +38,7 @@ Platform = st.radio(
 # Genre input
 
 Genre = st.text_input(
-    label = '04. Enter the Game Genre'
+    '04. Enter the Game Genre'
     )
 
 
@@ -54,6 +54,7 @@ if st.button('Submit for Prediction'):
     
     # output prediction
     st.subheader(f'Based on these game attributes, our model predicts a likely sales of {pred} (Million)')
+
 
 
 
