@@ -55,7 +55,8 @@ if st.button('Submit for Prediction'):
     pred = model.predict(new_data)
     
     # output prediction
-    st.subheader(f'Based on these game attributes, our model predicts a likely sales of {round(pred)} (Million)')
+    st.subheader(f'Based on these game attributes, our model predicts a likely sales of {round(pred,2)} (Million)')
+
 
 
 
