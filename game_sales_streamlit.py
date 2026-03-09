@@ -52,10 +52,11 @@ if st.button('Submit for Prediction'):
     new_data = pd.DataFrame({'Year' : [Year], 'Publisher' : [Publisher], 'Platform' : [Platform], 'Genre' : [Genre]})
     
     # apply model pipeling to the input data and extract probability prediction
-    pred = round(model.predict(new_data), 2)
+    pred = model.predict(new_data)
     
     # output prediction
-    st.subheader(f'Based on these game attributes, our model predicts a likely sales of {pred} (Million)')
+    st.subheader(f'Based on these game attributes, our model predicts a likely sales of {round(pred)} (Million)')
+
 
 
 
