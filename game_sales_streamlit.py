@@ -53,11 +53,12 @@ if st.button('Submit for Prediction'):
     
     # apply model pipeling to the input data and extract probability prediction
     pred = model.predict(new_data)
-    pred_round = round(float(pred), 4)
+    pred_round = float(pred)
 
     
     # output prediction
     st.subheader(f'Based on these game attributes, our model predicts a likely sales of {pred_round} (Million)')
+
 
 
 
